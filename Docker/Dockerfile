@@ -68,7 +68,7 @@ ENV OMP_NUM_THREADS=1
 RUN pip install --no-cache-dir jupyter ipywidgets jupyterlab nodejs pandas shapely descartes ipympl pymatgen==2018.12.12
 
 RUN apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends texlive dvipng
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends texlive dvipng \
     texlive-latex-extra texlive-fonts-recommended nodejs npm \
     && \
     apt-get autoremove --purge -y && \
